@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>5cb8d367-b9b1-491b-8fb4-a79ba91b404c</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App"/>
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.1" PrivateAssets="All"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.0"/>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.1"/>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProAgil.Domain\ProAgil.Domain.csproj"/>
+    <ProjectReference Include="..\ProAgil.Repository\ProAgil.Repository.csproj"/>
+  </ItemGroup>
+</Project>
