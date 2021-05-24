@@ -17,10 +17,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { PalestrantesComponent } from './palestrantes/palestrantes.component';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './shared/nav/nav.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TituloComponent } from './shared/titulo/titulo.component';
 
 @NgModule({
   declarations: [					
@@ -30,7 +31,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
       NavComponent,
       ContatosComponent,
       PerfilComponent,
-      DashboardComponent
+      DashboardComponent,
+      TituloComponent
    ],
   imports: [
     BrowserModule,
