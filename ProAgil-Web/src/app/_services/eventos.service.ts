@@ -11,7 +11,7 @@ export class EventosService {
 constructor(private http: HttpClient) { }
 baseURL = 'http://localhost:5000/api/event'
 
-getAllEvento(): Observable<Event[]> {
+getAllEventos(): Observable<Event[]> {
   return this.http.get<Event[]>(this.baseURL);
 }
 
