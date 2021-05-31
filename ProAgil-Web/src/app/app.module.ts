@@ -22,6 +22,7 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TituloComponent } from './shared/titulo/titulo.component';
+import { DateTimeFormatPipePipe } from './helper/DateTimeFormatPipe.pipe';
 
 @NgModule({
   declarations: [					
@@ -32,12 +33,14 @@ import { TituloComponent } from './shared/titulo/titulo.component';
       ContatosComponent,
       PerfilComponent,
       DashboardComponent,
-      TituloComponent
+      TituloComponent,
+      DateTimeFormatPipePipe
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule, 
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
